@@ -1,0 +1,26 @@
+/* label{background: red; width: 100px; 
+    display:inline-block;
+} */
+ul, li, ol {list-style: none;}
+li{border-bottom: 1px solid #ccc;
+    line-height: 200%;
+}
+#form1 label{
+    width: 200px;
+    display: inline-block;
+}
+#join{
+    width: 700px;
+    border: 5px solid #ddd;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+#join label{
+    width: 700px;
+    display: inline-block;
+}
+#join .user input{
+    width: 80%;
+}
+div{margin-top: 30px;}

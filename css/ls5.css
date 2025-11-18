@@ -1,0 +1,29 @@
+#form1{
+    width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+ul, li{ margin: 0; padding: 0;}
+li{list-style: none; line-height: 180%;}
+#form1 legend{font-weight: bold;}
+#form1 label{width: 73px;  display: inline-block;}
+#form1 ul li input{width:70%}
+#form1 ul li:last-child input{width:30%}
+.button{
+    text-align: center;
+    margin-top: 20px;
+}
+.button input{
+    background: none;
+    padding: 5px 10px;
+}
+
+#form2{
+    width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+#form2 h2{text-align: center;}
+#form2 fieldset{}
+#form2 fieldset legend{}

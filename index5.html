@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그</title>
+    <link rel="stylesheet" href="./css/ls5.css">
+</head>
+<body>
+    <form action="#">
+        <h2>type따른 태그</h2>
+        <input type="number" min="1">
+        <input type="range">
+
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    선물용 3kg
+                </label>
+                <input type="number" min="0" max="5">개(최대5개)
+            </li>
+            <li>
+                <input type="date" min="2025-11-01" max="2025-11-15">
+                <input type="month">
+                <input type="week">
+                <input type="time">
+                <input type="datetime-local">
+                <input type="image" src="./img/우빈이.jpg" alt="버튼">
+                <input type="button" value="공지창 열기" onclick="window.open('index4.html', '_blank', 'width=300, heingt=500')">
+                <input type="file">
+                <input type="hidden">
+            </li>
+        </ul>
+        <h2>input태그의 주요속성</h2>
+        <ul>
+            <li>
+                <input type="text" autofocus>
+                <input type="text" placeholder="아이디를 입력해주세요">
+                <input type="text" placeholder="읽기전용" readonly>
+                <input type="text" required>
+            </li>
+        </ul>
+        <input type="submit">
+    </form>
+
+
+    <form action="" id="form1">
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li>
+                    <label for="prod">주문 상품</label>
+                    <input type="text"  id="prod" value="상품용 3kg" readonly>
+                </li>
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text"  id="user_name" value="고경희" required>
+                </li>
+                <li>
+                    <label for="addr">배송 주소</label>
+                    <input type="text"  id="addr"  required>
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email"  id="email" >
+                </li>
+                 <li>
+                    <label for="tel">연락처</label>
+                    <input type="tel"  id="tel" placeholder="하이픈 빼고 입력해 주세요(01012345678)"  required>
+                </li>
+                 <li>
+                    <label for="day">배송 지정</label>
+                    <input type="date"  id="day"><small>(주문일로부터 최소 3일 이후)</small>
+                </li>
+            </ul>
+        </fieldset>
+        <div class="button">
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action="#" id="form2">
+        <h2>회원 가입을 환영합니다</h2>
+        <fieldset>
+            <legend>사용자정보</legend>
+            <ul>
+                <li>
+                    <label for="uid">아이디</label>
+                    <input type="text" id="uid" autofocus placeholder="4자~10자 사이, 공백 없이" required>
+                </li>
+                <li>
+                    <label for="umail">이메일</label>
+                    <input type="email" id="umail" required>
+                </li>
+                <li>
+                    <label for="pw1">비밀번호</label>
+                    <input type="password" id="pw1"  placeholder="문자와 숫자, 특수 기호 포함" required>
+                </li>
+                <li>
+                    <label for="pw2">비밀번호 확인</label>
+                    <input type="password" id="pw2" required>
+                </li>
+            </ul>
+            </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label for="mailing_y">메일수신</label>
+            <input type="radio" id="mailing_y" name="mailing" value="mailing_yes">
+            <label for="mailing_n">메일수신 안 함</label>
+            <input type="radio" id="mailing_n" name="mailing" value="mailing_no" checked>
+        </fieldset>
+        <div>
+            <input type="submit" value="가입하기">
+            <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+</html>

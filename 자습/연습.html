@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자습</title>
+    <link rel="stylesheet" href="./css/연습.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<body>
+    <div class="box">
+        <div id="class">
+            <header>header</header>
+            <nav>nav</nav>
+         <aside>aside</aside>
+         <footer>footer</footer>
+     </div>
+    </div>
+
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label for="prod">주문상품</label>
+                    <input type="text" id="prod" value="상품용 3kg" readonly>
+                </li>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" value="고경희" required>
+                </li>
+                <li>
+                    <label for="addr">배송 주소</label>
+                    <input type="text" id="addr" autofocus required>
+                </li>
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="text" id="mail">
+                </li>
+                <li>
+                    <label for="phon">연락처</label>
+                    <input type="text" id="phon" placeholder="하이픈 빼고 입력해 주세요." required>
+                </li>
+                <li>
+                   <label>배송 지정</label>                    
+                   <input type="datetime-local" (주문일로부터 최소 3일 이후)>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+</body>
+</html>

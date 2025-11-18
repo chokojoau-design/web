@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>text-align vs flex</title>
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+
+  .container {
+    width: 300px;
+    height: 150px;
+    border: 2px solid #333;
+    margin-bottom: 40px;
+  }
+
+  /* text-align 사용 */
+  .text-center {
+    text-align: center;       /* 가로 중앙 정렬 */
+    line-height: 150px;       /* 세로 중앙 비슷하게 맞추기 */
+    background: #f0c0c0;
+  }
+
+  /* flex 사용 */
+  .flex-center {
+    display: flex;
+    justify-content: center;  /* 가로 중앙 정렬 */
+    align-items: center;      /* 세로 중앙 정렬 */
+    background: #c0f0c0;
+  }
+
+  /* 내부 박스 스타일 */
+  .box {
+    width: 80px;
+
+    
+    height: 40px;
+    background: #333;
+    color: #fff;
+    line-height: 40px;
+  }
+</style>
+</head>
+<body>
+
+<h2>1. text-align: center</h2>
+<div class="container text-center">
+  <span class="box">박스</span>
+</div>
+<p>텍스트/인라인 요소는 가운데지만, 블록 박스는 정확히 가운데가 아님</p>
+
+<h2>2. display: flex + justify-content + align-items</h2>
+<div class="container flex-center">
+  <div class="box">박스</div>
+</div>
+<p>블록 요소도 가로+세로 정확히 가운데 배치됨</p>
+
+</body>
+</html>

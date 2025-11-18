@@ -1,0 +1,86 @@
+a{text-decoration: none; color: #000}
+
+nav{
+    background: rgb(0, 153, 255);
+    padding: 20px 0;
+}
+nav>ul{
+    display: flex;
+    position: relative;
+    
+}
+nav>ul>li{position: relative;}
+nav>ul>li>a{
+    padding: 19px 20px; /*  >손가락영역을길게해줘야한다 */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+nav>ul>li>ul{display: none; position: absolute;
+        background: #eeff00;
+        top: 36px;
+        width: 100%;
+}
+nav>ul:hover>li>ul{display: block; text-align: center;}
+nav>ul>li>ul>li{
+    transition: .5s;
+}
+nav>ul>li>ul>li:hover{
+    background: red;
+}
+nav>ul>li>ul>li>a{
+    display: block;
+    padding: 20px;
+}
+nav>ul>li>ul>li:hover>a{
+    color: #fff;
+}
+
+
+a{text-decoration: none; color: #000;}
+header{width: 300px; height: 100vh; border-right: 1px solid #ddd;}
+h1{
+    text-align: center;
+}
+h1 a{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+nav{margin-top: 50px;}
+nav>ul{
+    border-top: 1px solid#ddd;
+}
+nav>ul>li{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+nav>ul>li:hover{
+    background: red;
+}
+
+nav>ul>li>a{
+    display: block;
+    padding: 20px;
+}
+
+nav>ul>li>ul{
+    display: none;
+}
+nav>ul>li:hover>ul{
+    display: block;
+    background: #ddd;
+}
+nav>ul>li>ul>li{
+    transition: .3s;
+}
+nav>ul>li>ul>li:hover{
+    background: #000;
+}nav>ul>il>ul>li:hover a{
+    color: #fff;
+}
+nav>ul>li>ul>a{
+    display: block;
+    padding: 20px;
+}

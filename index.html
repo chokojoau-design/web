@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 시작</title>
+    <style>
+        body{margin: 50px;}
+        h1{color:#2fb946}
+        .box{border: 3px solid #1fa71f; padding: 30px;}
+        /* .box : 클래스선택자 */ alt+shift+a 개발자들한테만 보이는 글자 
+        span{font-display: ;}
+        </style>
+<!--     <link rel="stylesheet" href="./css/style.css"> -->
+     <link rel="stylesheet" href="./css/stye1.css">
+</head>
+<body>
+    <div class="box">
+        <h1>제목 서식과 문단편집</h1>
+        <h2>h요소</h2>
+        <p>
+            h1~h6태그를 사용합니다. <br>
+            문서의 제목을 표시하는 용도로 사용된다. <br>
+            진하게 표시되며 숫자가 커질수록 글자크기가 작아진다.
+        </p>
+        <h2>p, br요소</h2>
+        <p>
+            p는 문단을 구성하는 요소이며 br요소는 단순 줄바꿈용도로 사용
+            br요소의 경우 종료 태그가 없이 사용
+        </p>
+    </div>
+    <div class="box">
+    <h1 style="background-color: red;">텍스트 관련 요소의 사용</h1>
+    <h2>연락처 정보 태그</h2>
+    <address> address 서울 종로구 지봉로 어디</address>
+    <h2>기울기 강조의 기울기, 디자인 요소의 기울기</h2>
+    <em style="background-color: blueviolet;">em은 강조의 의미야</em>
+    <i>i는 디자인의 의미</i>
+    <br>
+    <hr>
+    <h2>굵기의 강조, 디자인 강조</h2>
+    <strong>strong 강조의 굵기</strong><br>
+    <b>디자인의 굵기</b>
+    </div>
+    <div class="box">
+        <h1>목록 문단</h1>
+        <h2>순서 없는 목록 리스트</h2>
+        <h3>web design</h3>
+        <ul>
+            <li>css</li>
+            <li>html
+                <ul>
+                    <li>head</li>
+                    <li>body
+                        <ul>
+                            <li>img</li>
+                            <li>h1</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>photoshop</li>
+        </ul>
+        <br>
+        <h2>순서 있는 목록 리스트</h2>
+        <h3>최근 영화 예매순위</h3>
+        <ol>
+            <li>극장판 체인소 맨: 레제편</li>
+            <li>보스</li>
+            <li>어쩔수가없다</li>
+        </ol>
+        <hr>
+        <h2>정의 목록-이것은 무엇이다. 정의 내리고자 하는 용어</h2>
+        <h3>와인의 종류</h3>
+        <dl>
+            <dt>적포도주</dt>
+            <dd>포도를 껍질채 발효시킨 것으로 스테이크와 같은 육류요리와 함께 들면 고기맛을 돋구면서 분위기를 새롭게 한다.</dd>
+        </dl>
+    </div>
+    <div class="box">
+        <h1>이미지 태그사용하기</h1>
+        <img width="300" src="data:image/jpeg;base64,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" alt="김우빈이야">
+        <br>
+
+        <img width="200" src="./img/" alt="김우빈">
+        
+        <br>
+        <h2 style="background-color: #c0d40e; width: 500px;">이미지에 캡션 달기</h2>
+        <em style="background-color: #c0d40e;">기울기</em> <strong>굵은 글씨체</strong>
+        <figure>
+            
+             <img src="./img/우빈이.jpg" alt="김우빈">
+             <figcaption>우빈이가 웃고있는 사진이야</figcaption>
+        </figure>
+
+        <h1>비디오태그 사용하기</h1>
+        <video width="100%" src="./img/KakaoTalk_20251022_172702449.mp4" autoplay muted controls poster="사진주소링크"></video>
+        <audio src="./img/다운로드.wav" controls></audio>
+    </div>
+    <div class="box">
+        <h1>시멘틱태그(의미론적인)와테이블</h1>
+        <div id="wrap">
+            <header>header</header>
+            <nav>nav</nav>
+            <div id="main">
+                <section>section</section>
+                <article>article</article>
+            </div>
+            <aside>aside</aside>
+            <footer>footer</footer>
+        </div>
+    </div>
+    
+</body>
+</html>
