@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>튤립</title>
+</head>
+<body>
+    
+
+
+    <div class="fl">
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 200 300">
+        <defs>
+            <style>
+                .flower { fill: #ff4b4b; stroke: #000; stroke-width: 2; }
+                .stem   { fill: #4caf50; }
+                .leaf   { fill: #7ed37f; stroke: #000; stroke-width: 2; }
+            </style>
+        </defs>
+
+        <!-- 꽃잎 -->
+        <path class="flower"
+              d="M50 120 
+                 Q50 40 80 40 
+                 Q100 70 120 40
+                 Q150 40 150 120
+                 Q150 180 100 200
+                 Q50 180 50 120 Z" />
+
+        <!-- 줄기 -->
+        <rect class="stem" x="95" y="200" width="10" height="100" />
+
+        <!-- 왼쪽 잎 -->
+        <path class="leaf"
+            transform="scale(1, -1) translate(0, -520)"
+              d="M100 230
+                 Q40 220 50 270
+                 Q70 250 100 230 Z" />
+
+        <!-- 오른쪽 잎 -->
+        <path class="leaf"
+            transform="scale(1, -1) translate(0, -520)"
+              d="M100 230
+                 Q160 220 150 270
+                 Q130 250 100 230 Z" />
+    </svg>
+</div>
+
+
+
+</body>
+</html>
+
