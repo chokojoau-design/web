@@ -1,0 +1,94 @@
+/* *{margin: 0; padding: 0; }
+.wrap0{
+    background: rgb(75, 75, 75) ;
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 30px; 
+    padding: 20px;
+}
+#main{
+    background: rgb(255, 255, 255) ;
+    width: 900px;
+    height: 900px;
+    margin: 15px;
+    padding: 5px;
+}
+#main .wrap1{
+    width: 100%;
+    height: 300px;
+    display: flex;
+     margin: 5px auto; 
+}
+#main .wrap1 header{
+    background: rgb(69, 194, 216) ;
+     width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    flex: 1;
+    
+}
+#main .wrap1 nav{
+    background: rgb(232, 235, 80) ;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+#main .wrap2{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin: 5px auto;
+}
+#main .wrap2>section{
+    background: rgb(191, 80, 235) ;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+
+#main .wrap2>main{
+    background: rgb(247, 181, 95) ;
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+        
+}
+#main footer{
+    background: rgb(133, 248, 105) ;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px auto;
+    } */
+
+    
